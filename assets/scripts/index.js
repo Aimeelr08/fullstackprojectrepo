@@ -9,7 +9,7 @@ const bookEvents = require('./books/events.js');
 // On document ready
 $(() => {
   authEvents.addHandlers();
-  bookEvents.addHandlers();
+  listEvents.addHandlers();
   setAPIOrigin(location, config);
 });
 

@@ -10,11 +10,85 @@
       <!-- Do not add `script` tags unless you know what you are doing -->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
   </head>
   <body class="container-fluid">
-    <button id="getBooksButton" class="btn btn-default">Get Books!</button>
-    <button id="clearBooksButton" class="btn btn-default">Clear Books!</button>
+
     <div id="content" class="content">
     </div>
   </body>
+  <div class="row teal white-text z-depth-5">FullStackProject:</div>
+<article>
+  <header>
+
+    <!-- <input alt="Login" src="/assets/login.png" type="image" /> -->
+
+
+    <form id="sign-up">
+      <fieldset>
+        <div class="container row s12">
+          <legend>Sign up!</legend>
+          <input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
+          <label for="email" data-error="wrong" data-success="right">Email</label>
+
+          <input type="password" name="credentials[password]" placeholder="Password">
+          <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+          <input type="submit" name="submit" value="Sign up!" class="btn-large">
+      </fieldset>
+    </form>
+    </div>
+  <div class="divider col white"></div>
+    <form id="sign-in">
+      <fieldset>
+        <div class="container row s12">
+          <legend>Sign In!</legend>
+          <input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
+          <label for="email" data-error="wrong" data-success="right">Email</label>
+          <input type="password" name="credentials[password]" placeholder="Password">
+          <input type="submit" name="submit" value="Sign In" class="btn-large">
+      </fieldset>
+    </form>
+  <div class="divider"></div>
+    </div>
+    <form id="change-password">
+      <fieldset>
+        <div class="container col s6 teal darken-4 hoverable">
+          <legend>Change Password!</legend>
+          <input type="password" name="passwords[old]" placeholder="Current Password">
+          <input type="password" name="passwords[new]" placeholder="New Password">
+          <input type="submit" name="submit" value="Change Password" class="btn-large">
+      </fieldset>
+    </form>
+    </div>
+      <div class="divider"></div>
+    <form id="sign-out">
+      <div class="container  teal darken-4 hoverable">
+        <fieldset>
+          <legend>Sign Out!</legend>
+          <form method="get" action="/sign-out">
+            <button type="sign-out" name="submit" value="sign-out" class="btn-large" onclick="history.go(0)" /> Sign-out </button>
+        </fieldset>
+        </form>
+
+</article>
+</header>
+
+<!-- <object width="100%" height="300px" data="posts.html"></object> -->
+<form id="posts">
+
+  <div class="row">
+         <div class="input-field row s12 white">
+    <textarea id="textarea1" class="materialize-textarea" data-length="400"></textarea>
+           <label for="textarea1"></label>
+
+    </form>
+  </div>
+        </div>
+
+
+
+
+
+
 </html>
