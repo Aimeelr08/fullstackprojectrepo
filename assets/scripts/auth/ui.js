@@ -21,7 +21,8 @@ const failure = (error) => {
 
 const signInSuccess = (data) => {
   app.user = data.user;
-
+  console.log('ui.js signUpSuccess')
+  $('#login-prompt').text('Welcome ' + data.user.email + '!')
   $('#change-password').show();
   $('#posts').show();
   $('#sign-in').hide();
