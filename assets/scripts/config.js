@@ -2,7 +2,7 @@
 
 const config = {
   apiOrigins: {
-    production: 'https://backfullstackrepo.herokuapp.com',
+    production: 'https://backfullstackproject.herokuapp.com',
   },
 };
 
